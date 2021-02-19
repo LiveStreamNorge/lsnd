@@ -8,7 +8,9 @@
   },
   "keywords": [],
   "author": "jdanks.army",
-  "contributors": ["datagutt"],
+  "contributors": [
+    "datagutt"
+  ],
   "license": "AGPL-3.0-only",
   "dependencies": {
     "axios": "^0.21.1",

@@ -1,4 +1,4 @@
-# jdanks.armyd
+# lsnd
 [Orginally forked from jdanks.armyd](https://github.com/jdanks-army/jdanks.armyd)
 The `lsn` daemon, based on jdanks.armyd.
 Used for a directory of Norwegian streamers on [LiveStreamNorge](https://livestreamnorge.no)
