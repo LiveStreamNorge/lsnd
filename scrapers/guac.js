@@ -6,7 +6,7 @@ module.exports = [platform, async function (id) {
     if (_data?.statusCode !== 200) return {};
     const data = _data.data;
     return {
-        live: data.live,
+        live: !!data.live,
         name: data.name,
         avatar: data.user.avatar,
         id, platform,
