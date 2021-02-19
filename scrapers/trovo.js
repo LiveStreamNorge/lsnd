@@ -5,7 +5,7 @@ const assert = require("assert");
 nconf.argv()
     .env()
     .file({
-        file: '../config.json'
+        file: 'config.json'
     }
 );
 

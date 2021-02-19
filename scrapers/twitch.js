@@ -5,12 +5,11 @@ const nconf = require('nconf');
 nconf.argv()
     .env()
     .file({
-        file: '../config.json'
+        file: 'config.json'
     }
 );
 
 const avatars = new Map();
-
 const hasAuth = nconf.get('twitch:client_id') && nconf.get('twitch:client_secret') && 1;
 
 // Twitch needs you to first acquire an access token before interacting with their API
