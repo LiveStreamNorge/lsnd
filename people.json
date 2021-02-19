@@ -10,6 +10,10 @@
   },
   {
     "platform": "twitch",
+    "userId": "thomasPASTE"
+  },
+  {
+    "platform": "twitch",
     "userId": "Toreinar"
   },
   {
@@ -19,6 +23,10 @@
   {
     "platform": "guac",
     "userId": "Vegard"
+  },
+  {
+    "platform": "guac",
+    "userId": "tappelino"
   },
   {
     "platform": "youtube",
@@ -34,5 +42,9 @@
     "platform": "dlive",
     "userId": "RealStianNorway",
     "customUsername": "StianNorway"
+  },
+  {
+    "platform": "dlive",
+    "userId": "PokemonLegenden"
   }
 ]
