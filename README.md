@@ -22,6 +22,7 @@ Reads input from `./people.json` and starts scrapin'.
  - `"robotstreamer"` - third entry is used as username
  - `"trovo"` - expects `TROVO_CLIENT_ID` envar
  - `"twitch"` - expects `TWITCH_CLIENT_ID`, `TWITCH_CLIENT_SECRET` envars
+ - `"guac"`
 
 ### Environment variables
 All secrets are optional; in that case, scraping from these 
