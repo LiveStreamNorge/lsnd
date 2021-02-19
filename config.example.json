@@ -1,0 +1,16 @@
+{
+  "http": {
+    "port": "9080",
+    "ssl": false,
+    "ssl_port": "9443",
+    "ssl_cert": "",
+    "ssl_privkey": "",
+    "twitch": {
+      "client_id": "",
+      "client_secret": ""
+    },
+    "trovo": {
+      "client_id": "",
+    }
+  }
+}

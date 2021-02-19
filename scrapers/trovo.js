@@ -1,12 +1,20 @@
 const axios = require("axios");
+const nconf = require('nconf');
 const assert = require("assert");
+
+nconf.argv()
+    .env()
+    .file({
+        file: '../config.json'
+    }
+);
 
 const id_memoization = new Map();
 module.exports = ["trovo", async function (username) {
     // TODO: Take a more functional approach and wrap the entire
     //       lambda instead of accessing it directly?
-    const token = process.env.TROVO_CLIENT_ID;
-    if(!token) throw new Error("No TROVO_CLIENT_ID set.");
+    const token = nconf.get('trovo:client_id');
+    if(!token) throw new Error("No trovo:client_id set.");
 
     // Get IDs for usernames
     if (!id_memoization.has(username)) {

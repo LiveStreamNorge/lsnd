@@ -3,6 +3,8 @@ const http = require('http');
 const https = require('https');
 const fs = require('fs');
 
+const nconf = require('nconf');
+
 const express = require('express');
 const cors = require('cors');
 
@@ -10,8 +12,23 @@ const crypto = require('crypto');
 
 const scrapers = require("./scrapers");
 
-const port = process.env.LSN_PORT || 80;
-const sslPort = process.env.LSN_SSL_PORT || 443;
+nconf.argv()
+    .env()
+    .file({
+        file: 'config.json'
+    }
+);
+
+nconf.set('http:port', '9080');
+nconf.set('http:ssl', false);
+nconf.set('http:ssl_port', '9443');
+
+nconf.set('http:ssl_cert', '');
+nconf.set('http:ssl_privkey', '');
+nconf.save();
+
+const port = nconf.get('http:port') || 80;
+const sslPort = nconf.get('http:ssl_port') || 443;
 const app = express();
 
 const idToData = new Map();
@@ -99,14 +116,16 @@ httpServer.listen(port, async () => {
 });
 
 // Try setting up an https server
-try {
-    const key = fs.readFileSync(process.env.LSN_SSL_PRIVKEY || '/etc/certs/api.jdanks.army/privkey.pem');
-    const cert = fs.readFileSync(process.env.LSN_SSL_CERT || '/etc/certs/api.jdanks.army/fullchain.pem');
-    const httpsServer = https.createServer({key, cert}, app);
-    httpsServer.listen(443, () => {
-        console.log(`lsnd/TLS listening to 0.0.0.0:${sslPort}`);
-    });
-} catch (e) {
-    console.error("Couldn't set up HTTPS server!");
-    console.error(e.message);
+if(nconf.get('http:ssl') === true){
+    try {
+        const key = fs.readFileSync(nconf.get('http:ssl_privkey') || '/etc/certs/api.jdanks.army/privkey.pem');
+        const cert = fs.readFileSync(nconf.get('http:ssl_cert') || '/etc/certs/api.jdanks.army/fullchain.pem');
+        const httpsServer = https.createServer({key, cert}, app);
+        httpsServer.listen(443, () => {
+            console.log(`lsnd/TLS listening to 0.0.0.0:${sslPort}`);
+        });
+    } catch (e) {
+        console.error("Couldn't set up HTTPS server!");
+        console.error(e.message);
+    }
 }
