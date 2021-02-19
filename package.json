@@ -1,5 +1,5 @@
 {
-  "name": "jdanks.armyd",
+  "name": "lsnd",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,6 +8,7 @@
   },
   "keywords": [],
   "author": "jdanks.army",
+  "contributors": ["datagutt"],
   "license": "AGPL-3.0-only",
   "dependencies": {
     "axios": "^0.21.1",

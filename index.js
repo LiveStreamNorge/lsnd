@@ -10,8 +10,8 @@ const crypto = require('crypto');
 
 const scrapers = require("./scrapers");
 
-const port = process.env.JDANKS_PORT || 80;
-const sslPort = process.env.JDANKS_SSL_PORT || 443;
+const port = process.env.LSN_PORT || 80;
+const sslPort = process.env.LSN_SSL_PORT || 443;
 const app = express();
 
 const idToData = new Map();
@@ -31,7 +31,7 @@ app.get('/streams', async (req, res) => {
 })
 
 app.get('/src', (req, res) => {
-    res.send(`Copyright ${new Date().getFullYear()}, AGPLv3, https://github.com/jdanks-army/jdanks.armyd`)
+    res.send(`Copyright ${new Date().getFullYear()}, AGPLv3, https://github.com/LiveStreamNorge/lsnd`)
 });
 
 const updatePeriod = 5 * 60 * 1000;
@@ -94,17 +94,17 @@ const people = require('./people.json');
 
 const httpServer = http.createServer(app);
 httpServer.listen(port, async () => {
-    console.log(`jdanks.armyd listening to 0.0.0.0:${port}`);
+    console.log(`lsnd listening to 0.0.0.0:${port}`);
     await loadPeople(people);
 });
 
 // Try setting up an https server
 try {
-    const key = fs.readFileSync(process.env.JDANKS_SSL_PRIVKEY || '/etc/certs/api.jdanks.army/privkey.pem');
-    const cert = fs.readFileSync(process.env.JDANKS_SSL_CERT || '/etc/certs/api.jdanks.army/fullchain.pem');
+    const key = fs.readFileSync(process.env.LSN_SSL_PRIVKEY || '/etc/certs/api.jdanks.army/privkey.pem');
+    const cert = fs.readFileSync(process.env.LSN_SSL_CERT || '/etc/certs/api.jdanks.army/fullchain.pem');
     const httpsServer = https.createServer({key, cert}, app);
     httpsServer.listen(443, () => {
-        console.log(`jdanks.armyd/TLS listening to 0.0.0.0:${sslPort}`);
+        console.log(`lsnd/TLS listening to 0.0.0.0:${sslPort}`);
     });
 } catch (e) {
     console.error("Couldn't set up HTTPS server!");

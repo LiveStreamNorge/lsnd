@@ -1,5 +1,9 @@
 # jdanks.armyd
-The `jdanks.army` daemon. Run `npm ci && npm start` to get it going.
+[Orginally forked from jdanks.armyd](https://github.com/jdanks-army/jdanks.armyd)
+The `lsn` daemon, based on jdanks.armyd.
+Used for a directory of Norwegian streamers on [LiveStreamNorge](https://livestreamnorge.no)
+
+Run `npm ci && npm start` to get it going.
 
 
 Reads input from `./people.json` and starts scrapin'.
@@ -23,10 +27,10 @@ Reads input from `./people.json` and starts scrapin'.
 All secrets are optional; in that case, scraping from these 
 websites will not function.
 
-- `JDANKS_PORT` · Listen port. Defaults to `80`.
-- `JDANKS_SSL_PORT` · Listen port for HTTPS. Defaults to `443`.
-- `JDANKS_SSL_PRIVKEY` · Location of private key. Defaults to `/etc/certs/api.jdanks.army/privkey.pem`.
-- `JDANKS_SSL_CERT` · Listen of certificate. Defaults to `/etc/certs/api.jdanks.army/fullchain.pem`.
+- `LSN_PORT` · Listen port. Defaults to `80`.
+- `LSN_SSL_PORT` · Listen port for HTTPS. Defaults to `443`.
+- `LSN_SSL_PRIVKEY` · Location of private key. Defaults to `/etc/certs/api.jdanks.army/privkey.pem`.
+- `LSN_SSL_CERT` · Listen of certificate. Defaults to `/etc/certs/api.jdanks.army/fullchain.pem`.
  - `TROVO_CLIENT_ID` · for Trovo support.
  - `TWITCH_CLIENT_ID` `TWITCH_CLIENT_SECRET` · for Twitch support.
 
