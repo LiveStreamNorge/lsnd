@@ -1,24 +1,407 @@
-[
-  {
+[{
     "platform": "twitch",
     "userId": "mystixx",
     "featuredRank": "1"
   },
   {
     "platform": "twitch",
+    "userId": "rubengks"
+  },
+  {
+    "platform": "twitch",
+    "userId": "patrickgreve"
+  },
+  {
+    "platform": "twitch",
+    "userId": "binci"
+  },
+  {
+    "platform": "twitch",
+    "userId": "realdonzii"
+  },
+  {
+    "platform": "twitch",
+    "userId": "musarita"
+  },
+  {
+    "platform": "twitch",
+    "userId": "ratax"
+  },
+  {
+    "platform": "twitch",
+    "userId": "panelet"
+  },
+  {
+    "platform": "twitch",
+    "userId": "frognerfrue"
+  },
+  {
+    "platform": "twitch",
+    "userId": "baretruls"
+  },
+  {
+    "platform": "twitch",
+    "userId": "kamillala"
+  },
+  {
+    "platform": "twitch",
+    "userId": "varlem"
+  },
+  {
+    "platform": "twitch",
+    "userId": "komplettno"
+  },
+  {
+    "platform": "twitch",
+    "userId": "thomaspaste"
+  },
+  {
+    "platform": "twitch",
+    "userId": "naireks"
+  },
+  {
+    "platform": "twitch",
+    "userId": "msvosch"
+  },
+  {
+    "platform": "twitch",
+    "userId": "daniellange"
+  },
+  {
+    "platform": "twitch",
+    "userId": "emzia"
+  },
+  {
+    "platform": "twitch",
+    "userId": "earlynixie"
+  },
+  {
+    "platform": "twitch",
+    "userId": "pondernstream"
+  },
+  {
+    "platform": "twitch",
+    "userId": "stianblipp"
+  },
+  {
+    "platform": "twitch",
+    "userId": "kjartanlauritzen"
+  },
+  {
+    "platform": "twitch",
+    "userId": "zorathegawd"
+  },
+  {
+    "platform": "twitch",
+    "userId": "stefflus"
+  },
+  {
+    "platform": "twitch",
+    "userId": "kongebonus"
+  },
+  {
+    "platform": "twitch",
+    "userId": "coderax"
+  },
+  {
+    "platform": "twitch",
+    "userId": "iverz76"
+  },
+  {
+    "platform": "twitch",
+    "userId": "tigersagerlive"
+  },
+  {
+    "platform": "twitch",
+    "userId": "rhodiumsharx"
+  },
+  {
+    "platform": "twitch",
+    "userId": "daisilly"
+  },
+  {
+    "platform": "twitch",
+    "userId": "danniz"
+  },
+  {
+    "platform": "twitch",
+    "userId": "lithaz"
+  },
+  {
+    "platform": "twitch",
+    "userId": "streetmanttv"
+  },
+  {
+    "platform": "twitch",
+    "userId": "yaklama"
+  },
+  {
+    "platform": "twitch",
+    "userId": "dcrusher"
+  },
+  {
+    "platform": "twitch",
+    "userId": "flumsen"
+  },
+  {
+    "platform": "twitch",
+    "userId": "byhopeful"
+  },
+  {
+    "platform": "twitch",
+    "userId": "missvestkant1"
+  },
+  {
+    "platform": "twitch",
+    "userId": "flashy84"
+  },
+  {
+    "platform": "twitch",
+    "userId": "rlivestreamnorge"
+  },
+  {
+    "platform": "twitch",
+    "userId": "uglen"
+  },
+  {
+    "platform": "twitch",
+    "userId": "rubenvareide"
+  },
+  {
+    "platform": "twitch",
+    "userId": "lollinnea"
+  },
+  {
+    "platform": "twitch",
+    "userId": "sylvla"
+  },
+  {
+    "platform": "twitch",
+    "userId": "knut"
+  },
+  {
+    "platform": "twitch",
+    "userId": "marcelinie"
+  },
+  {
+    "platform": "twitch",
+    "userId": "jenserkongen"
+  },
+  {
+    "platform": "twitch",
+    "userId": "eastahh"
+  },
+  {
+    "platform": "twitch",
+    "userId": "papzerinos"
+  },
+  {
+    "platform": "twitch",
+    "userId": "henwickispro"
+  },
+  {
+    "platform": "twitch",
+    "userId": "tosak"
+  },
+  {
+    "platform": "twitch",
+    "userId": "caxyhh"
+  },
+  {
+    "platform": "twitch",
+    "userId": "hannemadeline"
+  },
+  {
+    "platform": "twitch",
+    "userId": "sdk__"
+  },
+  {
+    "platform": "twitch",
+    "userId": "sjokoladen"
+  },
+  {
+    "platform": "twitch",
+    "userId": "chapawn"
+  },
+  {
+    "platform": "twitch",
+    "userId": "norwegianthunderboys"
+  },
+  {
+    "platform": "twitch",
+    "userId": "anektotv"
+  },
+  {
+    "platform": "twitch",
+    "userId": "elliek"
+  },
+  {
+    "platform": "twitch",
+    "userId": "centane"
+  },
+  {
+    "platform": "twitch",
+    "userId": "toreinar"
+  },
+  {
+    "platform": "twitch",
+    "userId": "saasinho"
+  },
+  {
+    "platform": "twitch",
+    "userId": "arveofnorway"
+  },
+  {
+    "platform": "twitch",
     "userId": "datagutt"
   },
   {
     "platform": "twitch",
-    "userId": "thomasPASTE"
+    "userId": "helenepwn"
   },
   {
     "platform": "twitch",
-    "userId": "Toreinar"
+    "userId": "refluxeuw"
+  },
+  {
+    "platform": "twitch",
+    "userId": "kroken_gutten"
+  },
+  {
+    "platform": "twitch",
+    "userId": "norbro86"
+  },
+  {
+    "platform": "twitch",
+    "userId": "manisss29"
+  },
+  {
+    "platform": "twitch",
+    "userId": "neverhome"
+  },
+  {
+    "platform": "twitch",
+    "userId": "tvchristina"
+  },
+  {
+    "platform": "twitch",
+    "userId": "stormlasj"
+  },
+  {
+    "platform": "twitch",
+    "userId": "funkyperry"
+  },
+  {
+    "platform": "twitch",
+    "userId": "taperen"
+  },
+  {
+    "platform": "twitch",
+    "userId": "royalwebz"
+  },
+  {
+    "platform": "twitch",
+    "userId": "hassehope69"
+  },
+  {
+    "platform": "twitch",
+    "userId": "maarinad"
+  },
+  {
+    "platform": "twitch",
+    "userId": "lordjonaslive"
+  },
+  {
+    "platform": "twitch",
+    "userId": "onkelarn"
+  },
+  {
+    "platform": "twitch",
+    "userId": "smorklatt"
+  },
+  {
+    "platform": "twitch",
+    "userId": "inkl0rd"
+  },
+  {
+    "platform": "twitch",
+    "userId": "bassebror"
+  },
+  {
+    "platform": "twitch",
+    "userId": "asmodaitv"
+  },
+  {
+    "platform": "twitch",
+    "userId": "sjeletyven1"
+  },
+  {
+    "platform": "twitch",
+    "userId": "texazrexaz"
+  },
+  {
+    "platform": "twitch",
+    "userId": "misspettersen"
+  },
+  {
+    "platform": "twitch",
+    "userId": "kennyr78"
+  },
+  {
+    "platform": "twitch",
+    "userId": "daisyhakon"
+  },
+  {
+    "platform": "twitch",
+    "userId": "inklord"
+  },
+  {
+    "platform": "twitch",
+    "userId": "halalaine"
+  },
+  {
+    "platform": "twitch",
+    "userId": "ronnyhelmersen"
+  },
+  {
+    "platform": "twitch",
+    "userId": "oskarwesterlin"
+  },
+  {
+    "platform": "twitch",
+    "userId": "kongfue"
+  },
+  {
+    "platform": "twitch",
+    "userId": "taiga_"
+  },
+  {
+    "platform": "twitch",
+    "userId": "limareacts"
+  },
+  {
+    "platform": "twitch",
+    "userId": "juliaheggelund"
+  },
+  {
+    "platform": "twitch",
+    "userId": "dagfinnlive"
+  },
+  {
+    "platform": "twitch",
+    "userId": "smiiistad"
+  },
+  {
+    "platform": "twitch",
+    "userId": "yomakka_flo"
+  },
+  {
+    "platform": "twitch",
+    "userId": "lasanias"
   },
   {
     "platform": "guac",
-    "userId": "datagutt"
+    "userId": "data"
   },
   {
     "platform": "guac",
@@ -46,5 +429,20 @@
   {
     "platform": "dlive",
     "userId": "PokemonLegenden"
+  },
+  {
+    "platform": "youtube",
+    "userId": "UC2Jumb4Wi3FssedVXcWkC7A",
+    "customUsername": "Majijej"
+  },
+  {
+    "platform": "youtube",
+    "userId": "UCso_0CnH2tTuV-A1GKQNCEg",
+    "customUsername": "Kattekryp"
+  },
+  {
+    "platform": "youtube",
+    "userId": "UCvwKXGcHPLyzWcEMoQObmUg",
+    "customUsername": "pleXio"
   }
 ]
