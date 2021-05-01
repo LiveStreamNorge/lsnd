@@ -1,7 +1,7 @@
 [{
     "platform": "twitch",
     "userId": "mystixx",
-    "featuredRank": "1"
+    "featuredRank": "100"
   },
   {
     "platform": "twitch",
@@ -29,7 +29,8 @@
   },
   {
     "platform": "twitch",
-    "userId": "panelet"
+    "userId": "panelet",
+    "featuredRank": "99.3"
   },
   {
     "platform": "twitch",
@@ -77,7 +78,8 @@
   },
   {
     "platform": "twitch",
-    "userId": "pondernstream"
+    "userId": "pondernstream",
+    "featuredRank": "50"
   },
   {
     "platform": "twitch",
@@ -185,7 +187,8 @@
   },
   {
     "platform": "twitch",
-    "userId": "jenserkongen"
+    "userId": "jenserkongen",
+    "featuredRank": "99.2"
   },
   {
     "platform": "twitch",
@@ -253,7 +256,12 @@
   },
   {
     "platform": "twitch",
-    "userId": "datagutt"
+    "userId": "borgvang"
+  },
+  {
+    "platform": "twitch",
+    "userId": "datagutt",
+    "featuredRank": "20"
   },
   {
     "platform": "twitch",
@@ -289,7 +297,8 @@
   },
   {
     "platform": "twitch",
-    "userId": "funkyperry"
+    "userId": "funkyperry",
+    "featuredRank": "10"
   },
   {
     "platform": "twitch",
@@ -410,7 +419,14 @@
   {
     "platform": "youtube",
     "userId": "UCU7aUJ_pKrs2ekBhUmC2Hnw",
-    "customUsername": "TappeStream"
+    "customUsername": "TappeStream",
+    "featuredRank": "99"
+  },
+  {
+    "platform": "youtube",
+    "userId": "UCNlWJ9OjEnDtYB3qJV4-JiA",
+    "customUsername": "Tappelino alt",
+    "featuredRank": "98.9"
   },
   {
     "platform": "youtube",
