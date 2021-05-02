@@ -358,6 +358,10 @@
   },
   {
     "platform": "twitch",
+    "userId": "Amalie"
+  },
+  {
+    "platform": "twitch",
     "userId": "kennyr78"
   },
   {
@@ -407,6 +411,18 @@
   {
     "platform": "twitch",
     "userId": "lasanias"
+  },
+  {
+    "platform": "twitch",
+    "userId": "oyvindmal"
+  },
+  {
+    "platform": "twitch",
+    "userId": "pkengen"
+  },
+  {
+    "platform": "twitch",
+    "userId": "trondbern"
   },
   {
     "platform": "guac",
