@@ -48,8 +48,8 @@ app.get('/streams', async (req, res) => {
     if(req.query.filter && typeof req.query.filter === 'object'){
         let filteredData = data;
         Object.entries(req.query.filter).forEach(arg => {
-            const index = arg[0];
-            const filter = arg[1];
+            var index = arg[0];
+            var filter = arg[1];
             console.log(arg, index, filter);
             filteredData = filteredData.filter(d => {
                 if(filter === 'true') filter = true;
