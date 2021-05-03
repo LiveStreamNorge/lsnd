@@ -1,7 +1,8 @@
 [{
     "platform": "twitch",
     "userId": "mystixx",
-    "featuredRank": "1"
+    "featuredRank": "1",
+    "team": "gutta"
   },
   {
     "platform": "twitch",
@@ -17,7 +18,8 @@
   },
   {
     "platform": "twitch",
-    "userId": "realdonzii"
+    "userId": "realdonzii",
+    "team": "gutta"
   },
   {
     "platform": "twitch",
@@ -25,7 +27,8 @@
   },
   {
     "platform": "twitch",
-    "userId": "ratax"
+    "userId": "ratax",
+    "team": "gutta"
   },
   {
     "platform": "twitch",
@@ -38,7 +41,13 @@
   },
   {
     "platform": "twitch",
-    "userId": "baretruls"
+    "userId": "baretruls",
+    "team": "gutta"
+  },
+  {
+    "platform": "twitch",
+    "userId": "bareole",
+    "team": "gutta"
   },
   {
     "platform": "twitch",
@@ -103,7 +112,8 @@
   },
   {
     "platform": "twitch",
-    "userId": "coderax"
+    "userId": "coderax",
+    "team": "gutta"
   },
   {
     "platform": "twitch",
@@ -135,7 +145,8 @@
   },
   {
     "platform": "twitch",
-    "userId": "yaklama"
+    "userId": "yaklama",
+    "team": "gutta"
   },
   {
     "platform": "twitch",
@@ -143,7 +154,8 @@
   },
   {
     "platform": "twitch",
-    "userId": "flumsen"
+    "userId": "flumsen",
+    "team": "gutta"
   },
   {
     "platform": "twitch",
@@ -175,7 +187,8 @@
   },
   {
     "platform": "twitch",
-    "userId": "sylvla"
+    "userId": "sylvla",
+    "team": "gutta"
   },
   {
     "platform": "twitch",
@@ -188,7 +201,8 @@
   {
     "platform": "twitch",
     "userId": "jenserkongen",
-    "featuredRank": "2.1"
+    "featuredRank": "2.1",
+    "team": "gutta"
   },
   {
     "platform": "twitch",
@@ -216,7 +230,8 @@
   },
   {
     "platform": "twitch",
-    "userId": "sdk__"
+    "userId": "sdk__",
+    "team": "gutta"
   },
   {
     "platform": "twitch",
@@ -232,7 +247,8 @@
   },
   {
     "platform": "twitch",
-    "userId": "anektotv"
+    "userId": "anektotv",
+    "team": "gutta"
   },
   {
     "platform": "twitch",
@@ -354,11 +370,13 @@
   },
   {
     "platform": "twitch",
-    "userId": "misspettersen"
+    "userId": "misspettersen",
+    "team": "gutta"
   },
   {
     "platform": "twitch",
-    "userId": "Amalie"
+    "userId": "Amalie",
+    "team": "gutta"
   },
   {
     "platform": "twitch",
@@ -374,7 +392,8 @@
   },
   {
     "platform": "twitch",
-    "userId": "ronnyhelmersen"
+    "userId": "ronnyhelmersen",
+    "team": "gutta"
   },
   {
     "platform": "twitch",
@@ -418,11 +437,13 @@
   },
   {
     "platform": "twitch",
-    "userId": "pkengen"
+    "userId": "pkengen",
+    "team": "gutta"
   },
   {
     "platform": "twitch",
-    "userId": "trondbern"
+    "userId": "trondbern",
+    "team": "gutta"
   },
   {
     "platform": "guac",

@@ -74,6 +74,7 @@ async function scrape({platform, userId, customUsername, ...rest}) {
     // Append `id' and `userId' fields before adding to the map
     data = { id, userId, ...data };
     if(rest.featuredRank) data.featuredRank = rest.featuredRank;
+    if(rest.team) data.team = rest.team;
 
     idToData.set(id, data);
 
