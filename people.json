@@ -6,7 +6,8 @@
   },
   {
     "platform": "twitch",
-    "userId": "rubengks"
+    "userId": "rubengks",
+    "team": "sensation"
   },
   {
     "platform": "twitch",
@@ -14,7 +15,8 @@
   },
   {
     "platform": "twitch",
-    "userId": "binci"
+    "userId": "binci",
+    "team": "Fnatic Network"
   },
   {
     "platform": "twitch",
@@ -37,7 +39,18 @@
   },
   {
     "platform": "twitch",
-    "userId": "frognerfrue"
+    "userId": "karna",
+    "team": "pepegas"
+  },
+  {
+    "platform": "twitch",
+    "userId": "niva",
+    "team": "pepegas"
+  },
+  {
+    "platform": "twitch",
+    "userId": "frognerfrue",
+    "team": "pepegas"
   },
   {
     "platform": "twitch",
@@ -51,11 +64,13 @@
   },
   {
     "platform": "twitch",
-    "userId": "kamillala"
+    "userId": "kamillala",
+    "team": "KAOS"
   },
   {
     "platform": "twitch",
-    "userId": "varlem"
+    "userId": "varlem",
+    "featuredRank": "7"
   },
   {
     "platform": "twitch",
@@ -63,11 +78,13 @@
   },
   {
     "platform": "twitch",
-    "userId": "thomaspaste"
+    "userId": "thomaspaste",
+    "featuredRank": "6"
   },
   {
     "platform": "twitch",
-    "userId": "naireks"
+    "userId": "naireks",
+    "team": "sensation"
   },
   {
     "platform": "twitch",
@@ -137,7 +154,8 @@
   },
   {
     "platform": "twitch",
-    "userId": "lithaz"
+    "userId": "lithaz",
+    "team": "pepegas"
   },
   {
     "platform": "twitch",
@@ -150,7 +168,8 @@
   },
   {
     "platform": "twitch",
-    "userId": "dcrusher"
+    "userId": "dcrusher",
+    "team": "livestreamnorge"
   },
   {
     "platform": "twitch",
@@ -171,7 +190,8 @@
   },
   {
     "platform": "twitch",
-    "userId": "rlivestreamnorge"
+    "userId": "rlivestreamnorge",
+    "team": "livestreamnorge"
   },
   {
     "platform": "twitch",
@@ -192,7 +212,8 @@
   },
   {
     "platform": "twitch",
-    "userId": "knut"
+    "userId": "knut",
+    "team": "MSI Gaming"
   },
   {
     "platform": "twitch",
@@ -252,7 +273,8 @@
   },
   {
     "platform": "twitch",
-    "userId": "elliek"
+    "userId": "elliek",
+    "team": "sensation"
   },
   {
     "platform": "twitch",
@@ -277,6 +299,7 @@
   {
     "platform": "twitch",
     "userId": "datagutt",
+    "team": "livestreamnorge",
     "featuredRank": "20"
   },
   {
@@ -401,7 +424,8 @@
   },
   {
     "platform": "twitch",
-    "userId": "kongfue"
+    "userId": "kongfue",
+    "team": "sensation"
   },
   {
     "platform": "twitch",
@@ -429,7 +453,8 @@
   },
   {
     "platform": "twitch",
-    "userId": "lasanias"
+    "userId": "lasanias",
+    "team": "sensation"
   },
   {
     "platform": "twitch",
