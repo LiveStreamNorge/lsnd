@@ -54,7 +54,7 @@ app.get('/streams', async (req, res) => {
             filteredData = filteredData.filter(d => {
                 if(filter === 'true') filter = true;
                 if(filter === 'false') filter = false;
-                if(filter.indexOf(',') > -1){
+                if(filter && typeof filter === 'string' && filter.indexOf(',') > -1){
                     filters = filter.split(',');
                     for(f in filters){
                         if(filters.hasOwnProperty(f)){
