@@ -54,7 +54,17 @@ app.get('/streams', async (req, res) => {
             filteredData = filteredData.filter(d => {
                 if(filter === 'true') filter = true;
                 if(filter === 'false') filter = false;
-                return d[index] === filter;
+                if(filter.indexOf(',') > -1){
+                    filters = filter.split(',');
+                    for(f in filters){
+                        if(filters.hasOwnProperty(f)){
+                            if(d[index] === f) return true;
+                        }
+                    }
+                    return false;
+                }else{
+                    return d[index] === filter;
+                }
             })
         })
         res.send(filteredData);
