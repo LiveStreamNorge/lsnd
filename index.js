@@ -52,6 +52,8 @@ app.get('/streams', async (req, res) => {
             const filter = arg[1];
             console.log(arg, index, filter);
             filteredData = filteredData.filter(d => {
+                if(filter === 'true') filter = true;
+                if(filter === 'false') filter = false;
                 return d[index] === filter;
             })
         })
