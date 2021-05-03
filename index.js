@@ -43,8 +43,23 @@ app.use(cors());
 app.use(limiter);
 
 app.get('/streams', async (req, res) => {
+    let data = Array.from(idToData.values());
+    console.log(req.query.filter);
+    if(req.query.filter && typeof req.query.filter === 'object'){
+        let filteredData = data;
+        Object.entries(req.query.filter).forEach(arg => {
+            const index = arg[0];
+            const filter = arg[1];
+            console.log(arg, index, filter);
+            filteredData = filteredData.filter(d => {
+                return d[index] === filter;
+            })
+        })
+        res.send(filteredData);
+    }else{
+        res.send(data);
+    }
     console.info(`[${req.ip}] Requested /streams`);
-    res.send(Array.from(idToData.values()));
 })
 
 app.get('/src', (req, res) => {
