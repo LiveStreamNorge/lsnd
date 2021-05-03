@@ -58,7 +58,7 @@ app.get('/streams', async (req, res) => {
                     filters = filter.split(',');
                     for(f in filters){
                         if(filters.hasOwnProperty(f)){
-                            if(d[index] === f) return true;
+                            if(d[index] === filters[f]) return true;
                         }
                     }
                     return false;
