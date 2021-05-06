@@ -8,6 +8,8 @@ module.exports = [platform, async function (id) {
     return {
         live: !!data.live,
         name: data.name,
+        // Normalize broadcaster type (so that it's identical to Twitch)
+        broadcaster_type: data.type && data.type !== 'NONE' ? data.type.toLowerCase() : '',
         avatar: data.user.avatar,
         id, platform,
         viewers: data.viewers,

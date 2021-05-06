@@ -52,5 +52,6 @@ module.exports = ["trovo", async function (username) {
         viewers: data.current_viewers,
         name: username,
         avatar: data.profile_pic,
+        thumbnail_url: data?.thumbnail
     }
 }];

@@ -79,7 +79,9 @@ module.exports = ["twitch", async function (username) {
         live: !!stream_data,
         name: username,
         avatar: avatars.get(username)[0],
+        broadcaster_type: user_data?.data[0]?.broadcaster_type,
         title: stream_data?.title,
-        viewers: stream_data?.viewer_count
+        viewers: stream_data?.viewer_count,
+        thumbnail_url: stream_data?.thumbnail_url
     };
 }];
