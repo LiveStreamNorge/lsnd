@@ -62,7 +62,7 @@ module.exports = ["twitch", async function (username) {
                 'Authorization': `Bearer ${access_token}`
             },
         });
-        avatars.set(username, [user_data.data[0].profile_image_url, 5]);
+        avatars.set(username, [user_data.data[0].profile_image_url, 5, user_data?.data[0]?.broadcaster_type]);
     } else {
         avatars.get(username)[1]--;
     }
@@ -79,7 +79,7 @@ module.exports = ["twitch", async function (username) {
         live: !!stream_data,
         name: username,
         avatar: avatars.get(username)[0],
-        broadcaster_type: user_data?.data[0]?.broadcaster_type,
+        broadcaster_type: avatars.get(username) && avatars.get(username)[2] || "",
         title: stream_data?.title,
         viewers: stream_data?.viewer_count,
         thumbnail_url: stream_data?.thumbnail_url
