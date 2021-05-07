@@ -294,7 +294,8 @@
   },
   {
     "platform": "twitch",
-    "userId": "borgvang"
+    "userId": "borgvang",
+    "team": "sensation"
   },
   {
     "platform": "twitch",
@@ -329,6 +330,11 @@
   {
     "platform": "twitch",
     "userId": "tvchristina"
+  },
+  {
+    "platform": "twitch",
+    "userId": "Tinuxxx",
+    "team": "sensation"
   },
   {
     "platform": "twitch",
