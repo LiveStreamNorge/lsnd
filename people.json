@@ -264,6 +264,10 @@
   },
   {
     "platform": "twitch",
+    "userId": "martey0"
+  },
+  {
+    "platform": "twitch",
     "userId": "norwegianthunderboys"
   },
   {
@@ -478,6 +482,14 @@
   },
   {
     "platform": "twitch",
+    "userId": "louisetiger"
+  },
+  {
+    "platform": "twitch",
+    "userId": "jegerhaakon"
+  },
+  {
+    "platform": "twitch",
     "userId": "ektemaggi"
   },
   {
@@ -532,6 +544,11 @@
     "platform": "youtube",
     "userId": "UCvwKXGcHPLyzWcEMoQObmUg",
     "customUsername": "pleXio"
+  },
+  {
+    "platform": "youtube",
+    "userId": "UC4qtAbYt3o7hNQHveqB9idw",
+    "customUsername": "Borgvang Live"
   },
   {
     "platform": "trovo",
