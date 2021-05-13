@@ -170,6 +170,10 @@
   },
   {
     "platform": "twitch",
+    "userId": "missreca"
+  },
+  {
+    "platform": "twitch",
     "userId": "yaklama",
     "team": "gutta",
     "featuredRank": "40"
