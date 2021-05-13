@@ -65,7 +65,8 @@
   {
     "platform": "twitch",
     "userId": "kamillala",
-    "team": "KAOS"
+    "team": "KAOS",
+    "featuredRank": "9"
   },
   {
     "platform": "twitch",
@@ -134,7 +135,8 @@
   },
   {
     "platform": "twitch",
-    "userId": "iverz76"
+    "userId": "iverz76",
+    "featuredRank": "11"
   },
   {
     "platform": "twitch",
@@ -150,7 +152,8 @@
   },
   {
     "platform": "twitch",
-    "userId": "danniz"
+    "userId": "danniz",
+    "featuredRank": "12"
   },
   {
     "platform": "twitch",
@@ -164,7 +167,8 @@
   {
     "platform": "twitch",
     "userId": "yaklama",
-    "team": "gutta"
+    "team": "gutta",
+    "featuredRank": "40"
   },
   {
     "platform": "twitch",
