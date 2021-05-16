@@ -93,7 +93,8 @@
   },
   {
     "platform": "twitch",
-    "userId": "msvosch"
+    "userId": "msvosch",
+    "team": "Fnatic Network"
   },
   {
     "platform": "twitch",
@@ -134,8 +135,7 @@
   },
   {
     "platform": "twitch",
-    "userId": "coderax",
-    "team": "gutta"
+    "userId": "coderax"
   },
   {
     "platform": "twitch",
@@ -294,7 +294,8 @@
   },
   {
     "platform": "twitch",
-    "userId": "centane"
+    "userId": "centane",
+    "team": "Fnatic Network"
   },
   {
     "platform": "twitch",
@@ -442,6 +443,10 @@
   {
     "platform": "twitch",
     "userId": "oskarwesterlin"
+  },
+  {
+    "platform": "twitch",
+    "userId": "skiben"
   },
   {
     "platform": "twitch",
