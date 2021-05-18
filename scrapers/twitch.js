@@ -101,7 +101,7 @@ module.exports = ["twitch", async function (username) {
 
     return {
         live: !!stream_data,
-        name: _data && _data.data && _data.data[0] && _data.data[0].username ?
+        name: _data && _data.data && _data.data[0] && _data.data[0].user_name ?
             _data?.data[0]?.user_name : username,
         avatar: avatars.get(username)[0],
         broadcaster_type: avatars.get(username) && avatars.get(username)[2] || "",
