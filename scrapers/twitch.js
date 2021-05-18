@@ -62,7 +62,13 @@ module.exports = ["twitch", async function (username) {
                 'Authorization': `Bearer ${access_token}`
             },
         });
-        avatars.set(username, [user_data.data[0].profile_image_url, 5, user_data?.data[0]?.broadcaster_type]);
+        // If we got a response
+        if(user_data && user_data.data && user_data.data.length === 0){
+            avatars.set(username, [user_data.data[0].profile_image_url, 5, user_data?.data[0]?.broadcaster_type]);
+        }else{
+            // If user is banned or something, never refetch avatar
+            avatars.get(username)[1] = 5;
+        }
     } else {
         avatars.get(username)[1]--;
     }
@@ -73,6 +79,20 @@ module.exports = ["twitch", async function (username) {
             'Authorization': `Bearer ${access_token}`
         }
     });
+
+    // Wrong username or they are banned
+    if(!_data || !_data.data || _data.data.length === 0){
+        return {
+            live: false, // Make sure they don't show up as live
+            name: username,
+            avatar: avatars.get(username)[0],
+            broadcaster_type: avatars.get(username) && avatars.get(username)[2] || "",
+            title: null,
+            viewers: null,
+            thumbnail_url: null
+        }
+    }
+
     const stream_data = _data.data[0];
 
     return {
