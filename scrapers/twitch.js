@@ -63,7 +63,7 @@ module.exports = ["twitch", async function (username) {
             },
         });
         // If we got a response
-        if(user_data && user_data.data && user_data.data.length === 0){
+        if(user_data && user_data.data && user_data.data.length !== 0){
             avatars.set(username, [user_data.data[0].profile_image_url, 5, user_data?.data[0]?.broadcaster_type]);
         }else{
             // If user is banned or something, never refetch avatar
