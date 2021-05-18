@@ -64,7 +64,7 @@ module.exports = ["twitch", async function (username) {
         });
         // If we got a response
         if (user_data && user_data.data && user_data.data.length !== 0) {
-            avatars.set(username, [user_data.data[0].profile_image_url, 5, user_data?.data[0]?.broadcaster_type]);
+            avatars.set(username, [user_data.data[0].profile_image_url, 5, user_data?.data[0]?.broadcaster_type, user_data?.data[0]?.display_name]);
         } else {
             // If user is banned or something, never refetch avatar
             if (avatars.has(username)) {
@@ -88,7 +88,7 @@ module.exports = ["twitch", async function (username) {
     if (!_data || !_data.data || _data.data.length === 0) {
         return {
             live: false, // Make sure they don't show up as live
-            name: username,
+            name: avatars.get(username)[3] || username,
             avatar: avatars.get(username)[0],
             broadcaster_type: avatars.get(username) && avatars.get(username)[2] || "",
             title: null,
@@ -101,8 +101,7 @@ module.exports = ["twitch", async function (username) {
 
     return {
         live: !!stream_data,
-        name: _data && _data.data && _data.data[0] && _data.data[0].user_name ?
-            _data?.data[0]?.user_name : username,
+        name: avatars.get(username)[3] || _data?.data[0]?.user_name ||  username,
         avatar: avatars.get(username)[0],
         broadcaster_type: avatars.get(username) && avatars.get(username)[2] || "",
         title: stream_data?.title,
