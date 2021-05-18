@@ -63,11 +63,15 @@ module.exports = ["twitch", async function (username) {
             },
         });
         // If we got a response
-        if(user_data && user_data.data && user_data.data.length !== 0){
+        if (user_data && user_data.data && user_data.data.length !== 0) {
             avatars.set(username, [user_data.data[0].profile_image_url, 5, user_data?.data[0]?.broadcaster_type]);
-        }else if(avatars.has(username)){
+        } else {
             // If user is banned or something, never refetch avatar
-            avatars.get(username)[1] = 5;
+            if (avatars.has(username)) {
+                avatars.get(username)[1] = 5;
+            } else {
+                avatars.set(username, ['', 5]);
+            }
         }
     } else {
         avatars.get(username)[1]--;
@@ -81,7 +85,7 @@ module.exports = ["twitch", async function (username) {
     });
 
     // Wrong username or they are banned
-    if(!_data || !_data.data || _data.data.length === 0){
+    if (!_data || !_data.data || _data.data.length === 0) {
         return {
             live: false, // Make sure they don't show up as live
             name: username,
