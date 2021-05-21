@@ -178,6 +178,10 @@
   },
   {
     "platform": "twitch",
+    "userId": "arazwow"
+  },
+  {
+    "platform": "twitch",
     "userId": "yaklama",
     "team": "gutta",
     "featuredRank": "40"
