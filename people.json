@@ -534,6 +534,10 @@
     "team": "gutta"
   },
   {
+    "platform": "twitch",
+    "userId": "ormenia"
+  },
+  {
     "platform": "guac",
     "userId": "data"
   },
