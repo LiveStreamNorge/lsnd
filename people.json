@@ -539,6 +539,10 @@
     "userId": "ormenia"
   },
   {
+    "platform": "twitch",
+    "userId": "pokemonlegenden"
+  },
+  {
     "platform": "guac",
     "userId": "data"
   },
