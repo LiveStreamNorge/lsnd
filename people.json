@@ -644,8 +644,7 @@
   },
   {
     "platform": "dlive",
-    "userId": "RealStianNorway",
-    "customUsername": "StianNorway"
+    "userId": "RealStianNorway"
   },
   {
     "platform": "dlive",
@@ -679,6 +678,21 @@
     "platform": "youtube",
     "userId": "UCtpQA_MrQ55prhFJp8fGtzg",
     "customUsername": "OTTERSEN"
+  },
+  {
+    "platform": "youtube",
+    "userId": "UCjTvf4nPCd4xfrlWg0OAgwA",
+    "customUsername": "Arve Streaming"
+  },
+  {
+    "platform": "youtube",
+    "userId": "UCxY6PVBV5MrAe8dHQJjA6mA",
+    "customUsername": "Arve - Norsk Gaming"
+  },
+  {
+    "platform": "youtube",
+    "userId": "UCNXfWiEIaeOEkZloZUCs2dQ",
+    "customUsername": "Arve - Norsk PlayStation Streaming"
   },
   {
     "platform": "trovo",
