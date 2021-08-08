@@ -14,5 +14,6 @@ module.exports = [platform, async function (id) {
         id, platform,
         viewers: data.viewers,
         title: data.title,
+        thumbnail_url: data?.banner,
     };
 }];
