@@ -29,7 +29,7 @@ module.exports = ["brime", async function (username) {
     return {
         live: data.isLive,
         title: data.title,
-        viewers: null, // this is not yet returned from API
+        viewers: data.viewerCount, // this is not yet returned from API
         name: data.channel,
         avatar: data?.broadcastingUser?.avatar,
         thumbnail_url: data?.streamThumbnailUrl
