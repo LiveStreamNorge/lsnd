@@ -13,10 +13,13 @@
   ],
   "license": "AGPL-3.0-only",
   "dependencies": {
+    "@secret-agent/chrome-89-0": "^4389.128.0",
     "axios": "^0.21.1",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "express-rate-limit": "^5.2.3",
-    "nconf": "^0.11.2"
+    "nconf": "^0.11.2",
+    "secret-agent": "^1.5.10",
+    "tiktok-scraper": "^1.4.36"
   }
 }
