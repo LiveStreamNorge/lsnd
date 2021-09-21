@@ -147,7 +147,8 @@
   },
   {
     "platform": "twitch",
-    "userId": "Rhoddis"
+    "userId": "Rhoddis",
+    "team": "gutta"
   },
   {
     "platform": "twitch",
@@ -226,8 +227,7 @@
   },
   {
     "platform": "twitch",
-    "userId": "sylvla",
-    "team": "gutta"
+    "userId": "sylvla"
   },
   {
     "platform": "twitch",
@@ -407,7 +407,8 @@
   },
   {
     "platform": "twitch",
-    "userId": "bassebror"
+    "userId": "bassebror",
+    "team": "gutta"
   },
   {
     "platform": "twitch",
@@ -607,6 +608,11 @@
   },
   {
     "platform": "twitch",
+    "userId": "Bredowskii",
+    "team": "gutta"
+  },
+  {
+    "platform": "twitch",
     "userId": "Klokkismann"
   },
   {
@@ -644,6 +650,31 @@
   {
     "platform": "twitch",
     "userId": "SmoothVoodoo"
+  },
+  {
+    "platform": "twitch",
+    "userId": "777Esports"
+  },
+  {
+    "platform": "twitch",
+    "userId": "detoo"
+  },
+  {
+    "platform": "twitch",
+    "userId": "coolbetnorway"
+  },
+  {
+    "platform": "twitch",
+    "userId": "JayWity"
+  },
+  {
+    "platform": "twitch",
+    "userId": "kikiicsgo"
+  },
+  {
+    "platform": "twitch",
+    "userId": "ingel",
+    "team": "sensation"
   },
   {
     "platform": "guac",
