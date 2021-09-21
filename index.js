@@ -76,7 +76,11 @@ app.get('/streams', async (req, res) => {
         res.send(data);
     }
     console.info(`[${req.ip}] Requested /streams`);
-})
+});
+
+app.get('/platforms', (req, res) => {
+   res.send([...scrapers]?.map(s => s[0]) ?? {});
+});
 
 app.get('/src', (req, res) => {
     res.send(`Copyright ${new Date().getFullYear()}, AGPLv3, https://github.com/LiveStreamNorge/lsnd`)
