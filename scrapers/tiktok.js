@@ -27,25 +27,23 @@ async function fetchRoomInfo(roomId) {
 }
 
 let tiktok_room_info = (username) => new Promise(async (resolve, reject) => {
-	/*try {
-		const user = await TikTokScraper.getUserProfileInfo(username, options);
-		console.log('tiktok_room_id', user);
-		resolve(user?.roomId);
-	} catch(e) {
-		reject(e);
-	}*/
-	const agent = global.agent;
-	try {
-		await agent.goto(`https://www.tiktok.com/@${username}`);
-		const dataJson = await agent.document.querySelector('#__NEXT_DATA__').textContent;
-		const data = JSON.parse(dataJson);
-		resolve({
-			roomId: data?.props?.pageProps?.roomId,
-			avatar: data?.props.pageProps?.userInfo?.user?.avatarLarger
-		});
-	} catch (e) {
-		reject(e);
-	}
+	return global.handler.dispatchAgent(
+		async agent => {
+			const {url} = agent.input;
+			await agent.goto(url);
+			try {
+				const dataJson = await agent.document.querySelector('#__NEXT_DATA__').textContent;
+				const data = JSON.parse(dataJson);
+				resolve({
+					roomId: data?.props?.pageProps?.roomId,
+					avatar: data?.props.pageProps?.userInfo?.user?.avatarLarger
+				});
+			} catch (e) {
+				reject(e);
+			}
+		},
+		{input: {url: `https://www.tiktok.com/@${username}`}},
+	);
 });
 
 module.exports = [platform, async function (username) {

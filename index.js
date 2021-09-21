@@ -130,11 +130,13 @@ const timestamp = () => new Date().toTimeString().split(' ')[0];
 const loadPeople = async people => {
     console.info("Populating scrape data...");
 
-    if (!global.agent) {
-        global.agent = new Agent.Agent({
-            userAgent: CONST.userAgent(),
-            showReplay: true,
-            blockedResourceTypes: ['All'],
+    if (!global.handler) {
+        global.handler = new Agent.Handler({
+            defaultAgentOptions: {
+                userAgent: CONST.userAgent(),
+                showReplay: true,
+                blockedResourceTypes: ['All'],
+            }
         });
     }
 
@@ -157,6 +159,9 @@ const loadPeople = async people => {
             await scrape(person) && console.info(`Scraped ${(person.userId)}!`);
         })
     );
+
+    // resolves when all dispatched agents are completed or an error occurs
+    await global.handler.waitForAllDispatchesSettled();
 
     console.info("Finished scraping everyone!")
 }
