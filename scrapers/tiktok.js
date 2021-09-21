@@ -8,7 +8,6 @@ const CONST = require('tiktok-scraper/build/constant');
 
 const platform = "tiktok";
 const options = {};
-process.env.SA_SHOW_BROWSER="1" ;
 
 async function fetchRoomInfo(roomId) {
 	var fetchUrl1 = "https://webcast.tiktok.com/webcast/room/info/?channel=web&aid=1988&app_language=en&webcast_language=en&app_name=tiktok_web&device_platform=web&cookie_enabled=true&screen_width=1920&screen_height=1080&browser_language=en-US&browser_platform=Win32&browser_name=Mozilla&browser_version=5.0%20%28Windows%29&browser_online=true&tz_name=Asia%2FShanghai&room_id="
@@ -33,7 +32,7 @@ async function fetchRoomInfo(roomId) {
 	return data;
 }
 
-let tiktok_room_id = (username) => new Promise(async (resolve, reject) => {
+let tiktok_room_info = (username) => new Promise(async (resolve, reject) => {
 	/*try {
 		const user = await TikTokScraper.getUserProfileInfo(username, options);
 		console.log('tiktok_room_id', user);
@@ -48,27 +47,23 @@ let tiktok_room_id = (username) => new Promise(async (resolve, reject) => {
 	});
 	try {
 		await agent.goto(`https://www.tiktok.com/@${username}`);
-		console.log(agent, agent.document);
 		const dataJson = await agent.document.querySelector('#__NEXT_DATA__').textContent;
-		console.log(dataJson);
 		await agent.close();
 		const data = JSON.parse(dataJson);
-		console.log(data);
-		console.log({
+		resolve({
 			roomId: data?.props?.pageProps?.roomId,
 			avatar: data?.props.pageProps?.userInfo?.user?.avatarLarger
 		});
-		resolve(data?.props?.pageProps?.roomId);
 	} catch (e) {
 		reject(e);
 	}
 });
 
 module.exports = [platform, async function (username) {
-	const roomId = await tiktok_room_id(username);
-	if (!roomId) return {};
+	const {roomId, avatar} = await tiktok_room_info(username);
+	if (!roomId) return {name: username, avatar, live: false};
 	const data = await fetchRoomInfo(roomId);
-	if (!data) return {name: username};
+	if (!data) return {name: username, avatar, live: false};
 	return {
 		// status 2 = live, status 4 = ended
 		// live: data.status === 4 && !data.is_replay,
