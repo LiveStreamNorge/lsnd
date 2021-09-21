@@ -12,6 +12,10 @@ const crypto = require('crypto');
 
 const scrapers = require("./scrapers");
 
+const Agent = require('secret-agent');
+
+const CONST = require('tiktok-scraper/build/constant');
+
 nconf.argv()
     .env()
     .file({
@@ -111,6 +115,14 @@ async function scrape({platform, userId, customUsername, ...rest}) {
 const timestamp = () => new Date().toTimeString().split(' ')[0];
 const loadPeople = async people => {
     console.info("Populating scrape data...");
+
+    if (!global.agent) {
+        global.agent = new Agent.Agent({
+            userAgent: CONST.userAgent(),
+            showReplay: true,
+            blockedResourceTypes: ['All'],
+        });
+    }
 
     // multithread all initial scrapes, wait for them all to finish
     await Promise.all(

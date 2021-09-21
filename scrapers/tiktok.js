@@ -1,11 +1,5 @@
 const axios = require("axios");
 
-const TikTokScraper = require('tiktok-scraper');
-
-const Agent = require('secret-agent');
-
-const CONST = require('tiktok-scraper/build/constant');
-
 const platform = "tiktok";
 const options = {};
 
@@ -40,15 +34,10 @@ let tiktok_room_info = (username) => new Promise(async (resolve, reject) => {
 	} catch(e) {
 		reject(e);
 	}*/
-	const agent = await new Agent.Agent({
-		userAgent: CONST.userAgent(),
-		showReplay: true,
-		blockedResourceTypes: ['All'],
-	});
+	const agent = global.agent;
 	try {
 		await agent.goto(`https://www.tiktok.com/@${username}`);
 		const dataJson = await agent.document.querySelector('#__NEXT_DATA__').textContent;
-		await agent.close();
 		const data = JSON.parse(dataJson);
 		resolve({
 			roomId: data?.props?.pageProps?.roomId,
