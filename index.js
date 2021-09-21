@@ -97,15 +97,25 @@ async function scrape({platform, userId, customUsername, ...rest}) {
 
     const scraper = (scrapers.has(platform) && scrapers.get(platform))
         || ( async () => { throw new Error(`Platform ${platform} not supported!`); } );
+    const id = crypto.createHash('sha256').update(platform + userId + customUsername).digest('hex');
 
     try {
         data = await scraper(userId, customUsername);
     } catch (e) {
         console.error(`Couldn't scrape ${userId} ${customUsername ?? ""}: `, e.message);
+        // Add a placeholder user (in case the first API request for this user fails)
+        if (!idToData.get(id)) {
+            idToData.set(id, {
+                id,
+                userId,
+                customUsername,
+                featuredRank,
+                team
+            });
+        }
         return false;
     }
 
-    const id = crypto.createHash('sha256').update(platform + userId + customUsername).digest('hex');
     // Append `id' and `userId' fields before adding to the map
     data = { id, userId, ...data };
     if(rest.featuredRank) data.featuredRank = rest.featuredRank;
