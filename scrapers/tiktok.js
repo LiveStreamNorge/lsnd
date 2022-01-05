@@ -22,8 +22,7 @@ async function fetchRoomInfo(roomId) {
 			"method": "GET",
 			"mode": "cors"
 		});
-	console.log(data);
-	return data;
+	return data.data;
 }
 
 let tiktok_room_info = async (username) => {
