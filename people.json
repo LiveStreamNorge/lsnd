@@ -16,7 +16,7 @@
   {
     "platform": "twitch",
     "userId": "binci",
-    "team": "Fnatic Network"
+    "team": "sensation"
   },
   {
     "platform": "twitch",
@@ -677,6 +677,26 @@
     "team": "sensation"
   },
   {
+    "platform": "twitch",
+    "userId": "monstermasten"
+  },
+  {
+    "platform": "twitch",
+    "userId": "fosselurken"
+  },
+  {
+    "platform": "twitch",
+    "userId": "sunni"
+  },
+  {
+    "platform": "twitch",
+    "userId": "proxyfox"
+  },
+  {
+    "platform": "twitch",
+    "userId": "buzzwild"
+  },
+  {
     "platform": "guac",
     "userId": "data"
   },
@@ -702,8 +722,8 @@
   },
   {
     "platform": "youtube",
-    "userId": "UCfucg_ZB0My69iAvleCELlQ",
-    "customUsername": "StianNorwayLegenden"
+    "userId": "UCpPECFTcZPDMLKZOWzd6X9A",
+    "customUsername": "StianNorway"
   },
   {
     "platform": "youtube",
@@ -773,5 +793,29 @@
   {
     "platform": "trovo",
     "userId": "StianNorwayOfficial"
+  },
+  {
+    "platform": "tiktok",
+    "userId": "stiannorwaybackup"
+  },
+  {
+    "platform": "tiktok",
+    "userId": "legendenstiannorwaylive"
+  },
+  {
+    "platform": "tiktok",
+    "userId": "stiannorwaylive"
+  },
+  {
+    "platform": "tiktok",
+    "userId": "stiannorway007"
+  },
+  {
+    "platform": "tiktok",
+    "userId": "stiannorway_backup"
+  },
+  {
+    "platform": "tiktok",
+    "userId": "manylandy777"
   }
 ]
