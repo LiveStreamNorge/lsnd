@@ -38,7 +38,6 @@ module.exports = ["brime", async function (username) {
         title: data?.stream?.title,
         viewers: chatterData?.count, 
         name: data.channel?.displayname,
-        platform,
         avatar: `https://assets.brimecdn.com/cdn-cgi/image/width=80,quality=100/brime/users/${data?.channel_owner?.channel_owner_xid}/avatar`,
         thumbnail_url: `https://thumbnails.brime.tv/live/${data?.channel?.legacy_id}/thumbnail.jpg`,
     }
