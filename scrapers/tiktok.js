@@ -26,28 +26,30 @@ async function fetchRoomInfo(roomId) {
 	return data;
 }
 
-let tiktok_room_info = (username) => new Promise(async (resolve, reject) => {
-	return global.handler.dispatchAgent(
-		async agent => {
-			const {url} = agent.input;
-			await agent.goto(url);
-			try {
-				const dataJson = await agent.document.querySelector('#__NEXT_DATA__').textContent;
-				const data = JSON.parse(dataJson);
-				resolve({
-					roomId: data?.props?.pageProps?.roomId,
-					avatar: data?.props.pageProps?.userInfo?.user?.avatarLarger
-				});
-			} catch (e) {
-				reject(e);
-			}
-		},
-		{input: {url: `https://www.tiktok.com/@${username}`}},
-	);
-});
+let tiktok_room_info = async (username) => {
+	var fetchUrl1 = "https://www.tiktok.com/api/user/detail/?uniqueId="
+	var fetchUrl = fetchUrl1 + username;
+	const {data} = await axios(fetchUrl,
+		{
+			withCredentials: true,
+			"headers": {
+				"User-Agent": CONST.userAgent(),
+				"Accept": "application/json, text/plain, */*",
+				"Accept-Language": "en-US,en;q=0.5",
+				"Sec-Fetch-Dest": "empty",
+				"Sec-Fetch-Mode": "cors",
+				"Sec-Fetch-Site": "same-site",
+				"referrer": "https://www.tiktok.com/",
+			},
+			"method": "GET",
+			"mode": "cors"
+		});
+	return data;
+};
 
 module.exports = [platform, async function (username) {
-	const {roomId, avatar} = await tiktok_room_info(username);
+	const {userInfo} = await tiktok_room_info(username);
+	const {roomId, avatarThumb: avatar} = userInfo.user;
 	if (!roomId) return {name: username, avatar, live: false};
 	const data = await fetchRoomInfo(roomId);
 	if (!data) return {name: username, avatar, live: false};
