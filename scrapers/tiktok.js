@@ -60,7 +60,7 @@ module.exports = [platform, async function (username) {
 		name: data?.owner?.display_id,
 		avatar: data?.owner?.avatar_large.url_list[1],
 		thumbnail_url: data?.covers?.url_list[1],
-		id, platform,
+		platform,
 		viewers: data.user_count,
 		title: data.title,
 	};
