@@ -12,8 +12,6 @@ nconf.argv()
 module.exports = ["brime", async function (username) {
     // TODO: Take a more functional approach and wrap the entire
     //       lambda instead of accessing it directly?
-    const token = nconf.get('brime:client_id');
-//    if(!token) throw new Error("No brime:client_id set.");
 
     const {data} = await axios.get(
     	`https://api.brime.tv/v1/channels/slug/${username}`,
@@ -21,7 +19,6 @@ module.exports = ["brime", async function (username) {
             headers: {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json',
-                'Client-ID': token,
             }
         }
     );
@@ -32,7 +29,6 @@ module.exports = ["brime", async function (username) {
             headers: {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json',
-                'Client-ID': token,
             }
         }
     );
@@ -42,6 +38,7 @@ module.exports = ["brime", async function (username) {
         title: data?.stream?.title,
         viewers: chatterData?.count, 
         name: data.channel?.displayname,
+        platform,
         avatar: `https://assets.brimecdn.com/cdn-cgi/image/width=80,quality=100/brime/users/${data?.channel_owner?.channel_owner_xid}/avatar`,
         thumbnail_url: `https://thumbnails.brime.tv/live/${data?.channel?.legacy_id}/thumbnail.jpg`,
     }
