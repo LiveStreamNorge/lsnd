@@ -58,7 +58,7 @@ module.exports = [platform, async function (username) {
 		live: data.live_type_audio || data.live_type_linkmic || data.live_type_normal || data.live_type_sandbox || data.live_type_screenshot || data.live_type_social_live || data.live_type_third_party,
 		name: data?.owner?.display_id,
 		avatar: data?.owner?.avatar_large.url_list[1],
-		thumbnail_url: data?.covers?.url_list[1],
+		thumbnail_url: data?.cover?.url_list[1],
 		platform,
 		viewers: data.user_count,
 		title: data.title,
