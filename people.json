@@ -791,6 +791,13 @@
     "customUsername": "Arve - Norsk PlayStation Streaming"
   },
   {
+    "platform": "youtube",
+    "userId": "UCJP5S5OVMgMGWjq7_fmrAQQ",
+    "customUsername": "Yaklama",
+    "team": "gutta",
+    "featuredRank": "40"
+  },
+  {
     "platform": "trovo",
     "userId": "StianNorwayOfficial"
   },
@@ -837,7 +844,8 @@
   {
     "platform": "tiktok",
     "userId": "yaklama",
-    "team": "gutta"
+    "team": "gutta",
+    "featuredRank": "40"
   },
   {
     "platform": "brime",
