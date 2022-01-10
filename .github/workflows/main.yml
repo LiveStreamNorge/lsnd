@@ -30,7 +30,7 @@ jobs:
         id: docker_build
         with:
           push: true
-          tags: jdanksarmy/jdanks-armyd:latest
+          tags: LiveStreamNorge/lsnd:latest
           
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
