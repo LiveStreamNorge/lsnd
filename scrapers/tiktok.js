@@ -31,7 +31,7 @@ module.exports = [platform, async function (username) {
 
 	let data;
 	try {
-		const data = await tiktokChatConnection.getRoomInfo();
+		data = await tiktokChatConnection.getRoomInfo();
 	} catch (err) {}
 	if (!data) return {name: username, avatar, live: false};
 	return {
