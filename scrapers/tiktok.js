@@ -1,5 +1,5 @@
 const axios = require("axios");
-const { WebcastPushConnection } = require('tiktok-livestream-chat-connector');
+const {WebcastPushConnection} = require('tiktok-livestream-chat-connector');
 
 const platform = "tiktok";
 
@@ -29,11 +29,22 @@ let tiktok_room_info = async (username) => {
 module.exports = [platform, async function (username) {
 	let tiktokChatConnection = new WebcastPushConnection('@' + username);
 
-	let data;
+	let data = false;
 	try {
 		data = await tiktokChatConnection.getRoomInfo();
-	} catch (err) {}
-	if (!data) return {name: username, avatar, live: false};
+	} catch (err) {
+		data = false;
+	}
+	if (!data) {
+		return {
+			name: username, avatar, live: false,
+			title: null,
+			platform,
+			viewers: null,
+			thumbnail_url: null
+		};
+	}
+	console.log('tiktok debug: ', data);
 	return {
 		// status 2 = live, status 4 = ended
 		// live: data.status === 4 && !data.is_replay,
