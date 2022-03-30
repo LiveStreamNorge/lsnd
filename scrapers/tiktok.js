@@ -26,7 +26,7 @@ async function fetchRoomInfo(roomId) {
 }
 
 let tiktok_room_info = async (username) => {
-	var fetchUrl1 = "https://www.tiktok.com/api/user/detail/?uniqueId="
+	var fetchUrl1 = "https://m.tiktok.com/node/share/user/@"
 	var fetchUrl = fetchUrl1 + username;
 	const {data} = await axios(fetchUrl,
 		{
