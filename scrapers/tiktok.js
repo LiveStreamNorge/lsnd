@@ -47,8 +47,8 @@ module.exports = [platform, async function (username) {
 	console.log('tiktok debug: ', data);
 	return {
 		// status 2 = live, status 4 = ended
-		// live: data.status === 4 && !data.is_replay,
-		live: data.live_type_audio || data.live_type_linkmic || data.live_type_normal || data.live_type_sandbox || data.live_type_screenshot || data.live_type_social_live || data.live_type_third_party,
+		live: data.status === 2,
+		// live: data.live_type_audio || data.live_type_linkmic || data.live_type_normal || data.live_type_sandbox || data.live_type_screenshot || data.live_type_social_live || data.live_type_third_party,
 		name: data?.owner?.display_id,
 		avatar: data?.owner?.avatar_large.url_list[1],
 		thumbnail_url: data?.cover?.url_list[1],
