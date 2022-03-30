@@ -74,6 +74,7 @@
   {
     "platform": "twitch",
     "userId": "varlem",
+    "team": "Twisted8",
     "featuredRank": "7"
   },
   {
@@ -232,7 +233,7 @@
   {
     "platform": "twitch",
     "userId": "knut",
-    "team": "MSI Gaming"
+    "team": "Twisted8"
   },
   {
     "platform": "twitch",
@@ -246,7 +247,8 @@
   },
   {
     "platform": "twitch",
-    "userId": "eastahh"
+    "userId": "eastahh",
+    "team": "Twisted8"
   },
   {
     "platform": "twitch",
@@ -664,7 +666,8 @@
   },
   {
     "platform": "twitch",
-    "userId": "JayWity"
+    "userId": "JayWity",
+    "team": "Twisted8"
   },
   {
     "platform": "twitch",
@@ -861,5 +864,35 @@
   {
     "platform": "brime",
     "userId": "datagutt"
+  },
+  {
+    "platform": "twitch",
+    "userId": "Vimsen_",
+    "team": "Twisted8"
+  },
+  {
+    "platform": "twitch",
+    "userId": "Twisted8",
+    "team": "Twisted8"
+  },
+  {
+    "platform": "twitch",
+    "userId": "T8richie",
+    "team": "Twisted8"
+  },
+  {
+    "platform": "twitch",
+    "userId": "WoakZyN",
+    "team": "Twisted8"
+  },
+  {
+    "platform": "twitch",
+    "userId": "SayeedBlack",
+    "team": "Twisted8"
+  },
+  {
+    "platform": "twitch",
+    "userId": "Petaaz",
+    "team": "Twisted8"
   }
 ]
