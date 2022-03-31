@@ -25,6 +25,7 @@ Reads input from `./people.json` and starts scrapin'.
  - `"twitch"` - expects `TWITCH_CLIENT_ID`, `TWITCH_CLIENT_SECRET` envars
  - `"guac"`
  - `"tiktok"`
+ - `"angelthump"`
 
 ### Config file
 A config file (config.json) is loaded using nconf.
