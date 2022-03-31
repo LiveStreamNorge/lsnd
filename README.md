@@ -1,5 +1,6 @@
 # lsnd
-[Orginally forked from jdanks.armyd](https://github.com/jdanks-army/jdanks.armyd)
+[Orginally forked from jdanks.armyd](https://github.com/jdanks-army/jdanks.armyd).
+
 The `lsn` daemon, based on jdanks.armyd.
 Used for a directory of Norwegian streamers on [LiveStreamNorge](https://livestreamnorge.no)
 
@@ -25,16 +26,29 @@ Reads input from `./people.json` and starts scrapin'.
  - `"guac"`
  - `"tiktok"`
 
-### Environment variables
+### Config file
+A config file (config.json) is loaded using nconf.
 All secrets are optional; in that case, scraping from these 
 websites will not function.
 
-- `LSN_PORT` · Listen port. Defaults to `80`.
-- `LSN_SSL_PORT` · Listen port for HTTPS. Defaults to `443`.
-- `LSN_SSL_PRIVKEY` · Location of private key. Defaults to `/etc/certs/api.jdanks.army/privkey.pem`.
-- `LSN_SSL_CERT` · Listen of certificate. Defaults to `/etc/certs/api.jdanks.army/fullchain.pem`.
- - `TROVO_CLIENT_ID` · for Trovo support.
- - `TWITCH_CLIENT_ID` `TWITCH_CLIENT_SECRET` · for Twitch support.
+```
+{
+  "http": {
+    "port": "9080",
+    "ssl": false,
+    "ssl_port": "9443",
+    "ssl_cert": "",
+    "ssl_privkey": ""
+  },
+  "twitch": {
+    "client_id": "",
+    "client_secret": ""
+  },
+  "trovo": {
+    "client_id": ""
+  }
+}
+```
 
 
 ### Endpoints
@@ -51,4 +65,5 @@ Exposed endpoints are
           viewers
         }
         ```
+ - `/platforms` · returns a JSON object of supported platforms
  - `/src` · returns license information and link to source code

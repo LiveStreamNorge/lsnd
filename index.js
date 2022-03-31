@@ -48,13 +48,11 @@ app.use(limiter);
 
 app.get('/streams', async (req, res) => {
     let data = Array.from(idToData.values());
-    console.log(req.query.filter);
     if(req.query.filter && typeof req.query.filter === 'object'){
         let filteredData = data;
         Object.entries(req.query.filter).forEach(arg => {
             var index = arg[0];
             var filter = arg[1];
-            console.log(arg, index, filter);
             filteredData = filteredData.filter(d => {
                 if(filter === 'true') filter = true;
                 if(filter === 'false') filter = false;
@@ -177,8 +175,8 @@ httpServer.listen(port, async () => {
 // Try setting up an https server
 if(nconf.get('http:ssl') === true){
     try {
-        const key = fs.readFileSync(nconf.get('http:ssl_privkey') || '/etc/certs/api.jdanks.army/privkey.pem');
-        const cert = fs.readFileSync(nconf.get('http:ssl_cert') || '/etc/certs/api.jdanks.army/fullchain.pem');
+        const key = fs.readFileSync(nconf.get('http:ssl_privkey') || '/etc/certs/lsn-api.dat.cloud/privkey.pem');
+        const cert = fs.readFileSync(nconf.get('http:ssl_cert') || '/etc/certs/lsn-api.dat.cloud/fullchain.pem');
         const httpsServer = https.createServer({key, cert}, app);
         httpsServer.listen(443, () => {
             console.log(`lsnd/TLS listening to 0.0.0.0:${sslPort}`);
