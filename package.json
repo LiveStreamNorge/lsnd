@@ -13,8 +13,6 @@
   ],
   "license": "AGPL-3.0-only",
   "dependencies": {
-    "@secret-agent/chrome-87-0": "^4280.141.0",
-    "@secret-agent/chrome-89-0": "^4389.128.0",
     "axios": "^0.21.1",
     "cors": "^2.8.5",
     "express": "^4.17.1",
