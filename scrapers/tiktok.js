@@ -3,8 +3,6 @@ const {WebcastPushConnection} = require('tiktok-livestream-chat-connector');
 
 const platform = "tiktok";
 
-const CONST = require('tiktok-scraper/build/constant');
-
 let tiktok_room_info = async (username) => {
 	var fetchUrl1 = "https://m.tiktok.com/node/share/user/@"
 	var fetchUrl = fetchUrl1 + username;

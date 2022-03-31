@@ -18,8 +18,6 @@
     "express": "^4.17.1",
     "express-rate-limit": "^5.2.3",
     "nconf": "^0.11.2",
-    "secret-agent": "^1.5.10",
-    "tiktok-livestream-chat-connector": "^0.9.15",
-    "tiktok-scraper": "^1.4.36"
+    "tiktok-livestream-chat-connector": "^0.9.15"
   }
 }
