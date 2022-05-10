@@ -940,5 +940,13 @@
   {
     "platform": "tiktok",
     "userId": "legendenavnorge"
+  },
+  {
+    "platform": "twitch",
+    "userId": "stigbrenner"
+  },
+  {
+    "platform": "twitch",
+    "userId": "agztergurl"
   }
 ]
