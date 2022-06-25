@@ -965,5 +965,9 @@
   {
     "platform": "twitch",
     "userId": "ineemilia"
+  },
+  {
+    "platform": "angelthump",
+    "userId": "tappelino"
   }
 ]
