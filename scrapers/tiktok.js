@@ -1,5 +1,5 @@
 const axios = require("axios");
-const {WebcastPushConnection} = require('tiktok-livestream-chat-connector');
+const {WebcastPushConnection} = require('tiktok-live-connector');
 
 const platform = "tiktok";
 
