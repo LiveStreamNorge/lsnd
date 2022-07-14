@@ -15,6 +15,10 @@
   },
   {
     "platform": "twitch",
+    "userId": "addexio"
+  },
+  {
+    "platform": "twitch",
     "userId": "binci",
     "team": "sensation"
   },
