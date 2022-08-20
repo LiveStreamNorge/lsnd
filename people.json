@@ -15,6 +15,14 @@
   },
   {
     "platform": "twitch",
+    "userId": "geir"
+  },
+  {
+    "platform": "twitch",
+    "userId": "missyprstine"
+  },
+  {
+    "platform": "twitch",
     "userId": "addexio"
   },
   {
@@ -212,7 +220,7 @@
   },
   {
     "platform": "twitch",
-    "userId": "missvestkant1"
+    "userId": "missvestkanten"
   },
   {
     "platform": "twitch",
@@ -243,6 +251,18 @@
     "platform": "twitch",
     "userId": "knut",
     "team": "Twisted8"
+  },
+  {
+    "platform": "twitch",
+    "userId": "wirtual"
+  },
+  {
+    "platform": "twitch",
+    "userId": "kristiande_"
+  },
+  {
+    "platform": "twitch",
+    "userId": "wrayn"
   },
   {
     "platform": "twitch",
@@ -777,6 +797,10 @@
   },
   {
     "platform": "dlive",
+    "userId": "PokemonLegenden"
+  },
+  {
+    "platform": "twitch",
     "userId": "PokemonLegenden"
   },
   {
