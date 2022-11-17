@@ -34,11 +34,11 @@ module.exports = ["brime", async function (username) {
     );
 
     return {
-        live: data?.channel?.is_live,
+        live: data?.stream?.live,
         title: data?.stream?.title,
         viewers: chatterData?.count, 
-        name: data.channel?.displayname,
-        avatar: `https://assets.brimecdn.com/cdn-cgi/image/width=80,quality=100/brime/users/${data?.channel_owner?.channel_owner_xid}/avatar`,
-        thumbnail_url: `https://thumbnails.brime.tv/live/${data?.channel?.legacy_id}/thumbnail.jpg`,
+        name: data?.display_name,
+        avatar: `https://assets.brimecdn.com/cdn-cgi/image/width=80,quality=100/brime/users/${data?.owner?.xid}/avatar`,
+        thumbnail_url: `https://thumbnails.brime.tv/cdn-cgi/image/width=640,quality=100,format=auto/live/${data?.owner?.xid}/thumbnail.jpg`,
     }
 }];
