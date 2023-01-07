@@ -13,6 +13,8 @@ RUN npm install
 # Bundle app source
 COPY . .
 
+RUN /tmp/apt-install-chrome-dependencies.sh
+
 EXPOSE 80
 
 CMD [ "node", "index.js" ]
