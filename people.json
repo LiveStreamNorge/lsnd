@@ -245,7 +245,7 @@
   },
   {
     "platform": "twitch",
-    "userId": "lollinnea"
+    "userId": "linnea"
   },
   {
     "platform": "twitch",
@@ -604,6 +604,10 @@
   {
     "platform": "twitch",
     "userId": "gekkoen"
+  },
+  {
+    "platform": "twitch",
+    "userId": "unsymp"
   },
   {
     "platform": "twitch",
@@ -1011,6 +1015,14 @@
   {
     "platform": "twitch",
     "userId": "FocusKamilla"
+  },
+  {
+    "platform": "twitch",
+    "userId": "gronland"
+  },
+  {
+    "platform": "twitch",
+    "userId": "fvoll"
   },
   {
     "platform": "angelthump",
