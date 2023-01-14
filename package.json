@@ -7,18 +7,18 @@
     "start": "node index.js"
   },
   "keywords": [],
-  "author": "jdanks.army",
+  "author": "datagutt",
   "contributors": [
-    "datagutt"
+    "jdanks.army"
   ],
   "license": "AGPL-3.0-only",
   "dependencies": {
     "@ulixee/hero-playground": "^2.0.0-alpha.17",
-    "axios": "^0.27.2",
+    "axios": "^1.2.2",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "express-rate-limit": "^6.4.0",
     "nconf": "^0.12.0",
-    "tiktok-live-connector": "^0.9.15"
+    "tiktok-live-connector": "^1.0.2"
   }
 }
