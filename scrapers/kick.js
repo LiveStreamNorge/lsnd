@@ -6,7 +6,7 @@ module.exports = [
   async function (username) {
     const hero = new Hero();
     await hero.goto(`https://kick.com`, {
-      timeoutMs: 10000,
+      timeoutMs: 3000,
     });
     const response = await hero.fetch(
       `https://kick.com/api/v1/channels/${username}`,
@@ -18,6 +18,8 @@ module.exports = [
     if (await response.ok) {
       data = await response.json();
     }
+
+    await hero.close();
 
     if (!data) {
       return {
@@ -33,7 +35,7 @@ module.exports = [
 
     return {
       live: data?.livestream && data?.livestream?.is_live ? true : false,
-      name: data?.user?.slug,
+      name: data?.user?.username,
       broadcaster_type: data?.verified ? "PARTNER" : "",
       avatar: data?.user?.profile_pic,
       username,
