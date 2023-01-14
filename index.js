@@ -39,6 +39,9 @@ const limiter = rateLimit({
 app.use(cors());
 app.use(limiter);
 
+app.get("/", (req, res) => {
+  res.send("LiveStreamNorge API");
+});
 app.get("/streams", async (req, res) => {
   let data = Array.from(idToData.values());
   if (req.query.filter && typeof req.query.filter === "object") {
@@ -69,6 +72,15 @@ app.get("/streams", async (req, res) => {
   console.info(`[${req.ip}] Requested /streams`);
 });
 
+app.get("/teams", (req, res) => {
+  let data = Array.from(idToData.values());
+  let teams = [];
+  data.forEach((d) => {
+    if (d.team && teams.indexOf(d.team) === -1) teams.push(d.team);
+  });
+  res.send(teams);
+});
+
 app.get("/platforms", (req, res) => {
   res.send([...scrapers]?.map((s) => s[0]) ?? {});
 });
@@ -79,7 +91,7 @@ app.get("/src", (req, res) => {
   );
 });
 
-const updatePeriod = 5 * 60 * 1000;
+const updatePeriod = 5 * 60 * 1000; // 5 minutes
 
 /**
  * @return Boolean
