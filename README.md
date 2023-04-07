@@ -19,7 +19,7 @@ Reads input from `./people.json` and starts scrapin'.
 ### Supported platforms:
  - `"youtube"` - id has to be the long `UC.....` format
  - `"dlive"`
- - `"bitwave"`
+ - `"kick"`
  - `"robotstreamer"` - third entry is used as username
  - `"trovo"` - expects `TROVO_CLIENT_ID` envar
  - `"twitch"` - expects `TWITCH_CLIENT_ID`, `TWITCH_CLIENT_SECRET` envars
@@ -67,4 +67,5 @@ Exposed endpoints are
         }
         ```
  - `/platforms` · returns a JSON object of supported platforms
+ - `/teams` · returns an array of stream teams
  - `/src` · returns license information and link to source code
