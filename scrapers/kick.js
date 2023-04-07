@@ -1,16 +1,21 @@
 const axios = require("axios");
 const platform = "kick";
-const capitalize = s => s && s[0].toUpperCase() + s.slice(1)
+const capitalize = (s) => s && s[0].toUpperCase() + s.slice(1);
 module.exports = [
   platform,
   async function (username) {
-    const {data} = await axios.get(`https://${platform}.com/api/v2/channels/${username}`, {
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json',
-        'User-Agent': `${capitalize(platform)}/1.0.13 Dalvik/2.1.0 (Linux; U; Android 13; Pixel 6 Pro Build/TQ1A.221205.011)`
+    const { data } = await axios.get(
+      `https://${platform}.com/api/v2/channels/${username}`,
+      {
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+          "User-Agent": `${capitalize(
+            platform
+          )}/1.0.13 Dalvik/2.1.0 (Linux; U; Android 13; Pixel 6 Pro Build/TQ1A.221205.011)`,
+        },
       }
-    });
+    );
 
     if (!data) {
       return {

@@ -1,4 +1,5 @@
-[{
+[
+  {
     "platform": "twitch",
     "userId": "mystixx",
     "featuredRank": "1",
@@ -1019,5 +1020,61 @@
   {
     "platform": "angelthump",
     "userId": "tappelino"
+  },
+  {
+    "platform": "kick",
+    "userId": "tappelino"
+  },
+  {
+    "platform": "kick",
+    "userId": "jenserkongen"
+  },
+  {
+    "platform": "kick",
+    "userId": "pondleif"
+  },
+  {
+    "platform": "kick",
+    "userId": "stiannorway"
+  },
+  {
+    "platform": "kick",
+    "userId": "papzerinos"
+  },
+  {
+    "platform": "kick",
+    "userId": "borgvang"
+  },
+  {
+    "platform": "kick",
+    "userId": "Kamilla"
+  },
+  {
+    "platform": "kick",
+    "userId": "Tigersager"
+  },
+  {
+    "platform": "kick",
+    "userId": "datagutt"
+  },
+  {
+    "platform": "kick",
+    "userId": "Knut"
+  },
+  {
+    "platform": "kick",
+    "userId": "bukkeneruse"
+  },
+  {
+    "platform": "kick",
+    "userId": "sketoby"
+  },
+  {
+    "platform": "kick",
+    "userId": "mystixx"
+  },
+  {
+    "platform": "kick",
+    "userId": "Kikics"
   }
 ]
