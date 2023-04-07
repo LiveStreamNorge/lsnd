@@ -36,7 +36,7 @@ module.exports = [
       avatar: data?.user?.profile_pic,
       username,
       platform,
-      viewers: data?.livestream?.viewers,
+      viewers: data?.livestream?.viewer_count,
       title: data?.livestream?.session_title, // or session_description
       thumbnail_url: data?.livestream?.thumbnail?.url,
     };
