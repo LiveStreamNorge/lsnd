@@ -1,25 +1,16 @@
-const Hero = require("@ulixee/hero-playground");
-
+const axios = require("axios");
 const platform = "kick";
+const capitalize = s => s && s[0].toUpperCase() + s.slice(1)
 module.exports = [
   platform,
   async function (username) {
-    const hero = new Hero();
-    await hero.goto(`https://kick.com`, {
-      timeoutMs: 3000,
-    });
-    const response = await hero.fetch(
-      `https://kick.com/api/v1/channels/${username}`,
-      {
-        method: "GET",
+    const {data} = await axios.get(`https://${platform}.com/api/v2/channels/${username}`, {
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
+        'User-Agent': `${capitalize(platform)}/1.0.13 Dalvik/2.1.0 (Linux; U; Android 13; Pixel 6 Pro Build/TQ1A.221205.011)`
       }
-    );
-    let data = {};
-    if (await response.ok) {
-      data = await response.json();
-    }
-
-    await hero.close();
+    });
 
     if (!data) {
       return {
