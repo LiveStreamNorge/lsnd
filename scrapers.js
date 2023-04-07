@@ -4,7 +4,7 @@ const fs = require("fs");
 // Wrap the scraper function: set the platform to the return obj, and delete viewers/title if not live
 const scrapers = fs
     .readdirSync('./scrapers')
-    .filter(f => f.endsWith('.js') && !f.contains('kick'))
+    .filter(f => f.endsWith('.js') && !f.includes('kick'))
     .map(x => require('./scrapers/' + x))
     .map(x => [x[0], async (...args) => {
         let r = await x[1](...args);
