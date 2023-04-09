@@ -110,6 +110,10 @@ async function scrape({ platform, userId, customUsername, ...rest }) {
     .update(platform + userId + customUsername)
     .digest("hex");
 
+  if (platform === "kick") {
+    // wait 2 sec before fetching
+    await new Promise((resolve) => setTimeout(resolve, 2000));
+  }
   try {
     data = await scraper(userId, customUsername);
   } catch (e) {
