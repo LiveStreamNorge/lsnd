@@ -122,6 +122,7 @@ async function scrape({ platform, userId, customUsername, ...rest }) {
       idToData.set(id, {
         id,
         userId,
+        platform,
         customUsername,
         featuredRank: rest.featuredRank ?? null,
         team: rest.team ?? null,
