@@ -4,6 +4,8 @@ const capitalize = (s) => s && s[0].toUpperCase() + s.slice(1);
 module.exports = [
   platform,
   async function (username) {
+    // wait 2 sec before fetching
+    await new Promise((resolve) => setTimeout(resolve, 2000));
     const { data } = await axios.get(
       `https://${platform}.com/api/v2/channels/${username}`,
       {
