@@ -127,7 +127,7 @@ async function scrape({ platform, userId, customUsername, ...rest }) {
         id,
         userId,
         platform,
-        name: customUsername,
+        name: customUsername ?? userId,
         customUsername,
         featuredRank: rest.featuredRank ?? null,
         team: rest.team ?? null,
