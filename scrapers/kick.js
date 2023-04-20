@@ -1,6 +1,11 @@
 const axios = require("axios");
 const platform = "kick";
 const capitalize = (s) => s && s[0].toUpperCase() + s.slice(1);
+const https = require("https");
+const httpsAgent = new https.Agent({
+  maxVersion: "TLSv1.2",
+  minVersion: "TLSv1.2"
+});
 module.exports = [
   platform,
   async function (username) {
@@ -14,6 +19,7 @@ module.exports = [
             platform
           )}/1.0.13 Dalvik/2.1.0 (Linux; U; Android 13; Pixel 6 Pro Build/TQ1A.221205.011)`,
         },
+        httpsAgent
       }
     );
 
