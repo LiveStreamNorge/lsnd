@@ -26,7 +26,6 @@ module.exports = [
     if (!data) {
       return {
         name: username,
-        avatar,
         live: false,
         title: null,
         platform,
