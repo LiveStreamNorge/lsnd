@@ -3,8 +3,8 @@ const platform = "kick";
 const capitalize = (s) => s && s[0].toUpperCase() + s.slice(1);
 const https = require("https");
 const httpsAgent = new https.Agent({
-  maxVersion: "TLSv1.2",
-  minVersion: "TLSv1.2"
+  maxVersion: "TLSv1.3",
+  minVersion: "TLSv1.3"
 });
 module.exports = [
   platform,
