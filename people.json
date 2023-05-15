@@ -12,6 +12,11 @@
   },
   {
     "platform": "twitch",
+    "userId": "charliethedoggo",
+    "team": "sensation"
+  },
+  {
+    "platform": "twitch",
     "userId": "patrickgreve"
   },
   {
