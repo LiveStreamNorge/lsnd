@@ -1,8 +1,5 @@
 # lsnd
-[Orginally forked from jdanks.armyd](https://github.com/jdanks-army/jdanks.armyd).
-
-The `lsn` daemon, based on jdanks.armyd.
-Used for a directory of Norwegian streamers on [LiveStreamNorge](https://livestreamnorge.no)
+Cross-streaming-platform API used for the Norwegian streamer directory on [LiveStreamNorge](https://lsn.dat.cloud)
 
 Run `npm ci && npm start` to get it going.
 
@@ -69,3 +66,6 @@ Exposed endpoints are
  - `/platforms` · returns a JSON object of supported platforms
  - `/teams` · returns an array of stream teams
  - `/src` · returns license information and link to source code
+
+### Credits
+[Orginally forked from jdanks.armyd](https://github.com/jdanks-army/jdanks.armyd).
