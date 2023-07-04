@@ -809,6 +809,11 @@
   },
   {
     "platform": "youtube",
+    "userId": "UCfz4PDINjOlm4ROlra4ekDg",
+    "customUsername": "Varlem"
+  },
+  {
+    "platform": "youtube",
     "userId": "UCey-nVtufq9mQcmcc6rC8BA",
     "customUsername": "Patrick Greve"
   },
@@ -1124,6 +1129,10 @@
   {
     "platform": "kick",
     "userId": "rubengks"
+  },
+  {
+    "platform": "kick",
+    "userId": "varlem"
   },
   {
     "platform": "tiktok",
