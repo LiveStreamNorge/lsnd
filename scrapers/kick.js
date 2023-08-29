@@ -68,6 +68,7 @@ module.exports = [
     );
     const data = res?.body;
 
+    await cycleTLS.exit();
     if (!data) {
       return {
         name: username,
