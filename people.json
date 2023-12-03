@@ -1174,5 +1174,9 @@
   {
     "platform": "tiktok",
     "userId": "trenditlive"
+  },
+  {
+    "platform": "twitch",
+    "userId": "pitbullems"
   }
 ]
