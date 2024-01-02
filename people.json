@@ -1181,5 +1181,13 @@
   {
     "platform": "twitch",
     "userId": "elzla"
+  },
+  {
+    "platform": "twitch",
+    "userId": "matshartvig"
+  },
+  {
+    "platform": "kick",
+    "userId": "andynorth"
   }
 ]
