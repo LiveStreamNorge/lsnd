@@ -1136,7 +1136,9 @@
   },
   {
     "platform": "kick",
-    "userId": "varlem"
+    "userId": "varlem",
+    "team": "Twisted8",
+    "featuredRank": "7"
   },
   {
     "platform": "kick",
