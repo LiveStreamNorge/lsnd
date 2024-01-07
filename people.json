@@ -1191,5 +1191,9 @@
   {
     "platform": "kick",
     "userId": "andynorth"
+  },
+  {
+    "platform": "twitch",
+    "userId": "spaiky"
   }
 ]
