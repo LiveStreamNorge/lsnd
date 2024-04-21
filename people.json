@@ -1215,5 +1215,9 @@
   {
     "platform": "twitch",
     "userId": "mikalstream"
+  },
+  {
+    "platform": "kick",
+    "userId": "zentroxtv"
   }
 ]
