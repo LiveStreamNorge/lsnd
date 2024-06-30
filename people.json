@@ -1222,6 +1222,10 @@
   },
   {
     "platform": "twitch",
-    "userid": "miiebiie"
+    "userId": "miiebiie"
+  },
+  {
+    "platform": "twitch",
+    "userId": "multiguruu"
   }
 ]
