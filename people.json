@@ -724,14 +724,6 @@
     "userId": "detoo"
   },
   {
-    "platform": "kick",
-    "userId": "detoo"
-  },
-  {
-    "platform": "twitch",
-    "userId": "coolbetinternational"
-  },
-  {
     "platform": "twitch",
     "userId": "JayWity",
     "team": "Twisted8"
@@ -907,9 +899,7 @@
   {
     "platform": "youtube",
     "userId": "UCJP5S5OVMgMGWjq7_fmrAQQ",
-    "customUsername": "Yaklama",
-    "team": "gutta",
-    "featuredRank": "40"
+    "customUsername": "Yaklama"
   },
   {
     "platform": "trovo",
