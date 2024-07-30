@@ -822,14 +822,6 @@
     "userId": "RealStianNorway"
   },
   {
-    "platform": "tiktok",
-    "userId": "RealStianNorway"
-  },
-  {
-    "platform": "tiktok",
-    "userId": "muskelbunt1"
-  },
-  {
     "platform": "dlive",
     "userId": "PokemonLegenden"
   },
@@ -911,19 +903,11 @@
   },
   {
     "platform": "tiktok",
-    "userId": "legendenstiannorwaylive"
-  },
-  {
-    "platform": "tiktok",
     "userId": "manylandy777"
   },
   {
     "platform": "tiktok",
     "userId": "bobtheshoplifter"
-  },
-  {
-    "platform": "tiktok",
-    "userId": "stiannorwayforfaen"
   },
   {
     "platform": "tiktok",
@@ -1160,7 +1144,7 @@
   },
   {
     "platform": "tiktok",
-    "userId": "stiannorwayshow"
+    "userId": "jossilivestream"
   },
   {
     "platform": "tiktok",
@@ -1229,5 +1213,17 @@
   {
     "platform": "twitch",
     "userId": "forstegir"
+  },
+  {
+    "platform": "tiktok",
+    "userId": "stiannorwayerbest"
+  },
+  {
+    "platform": "tiktok",
+    "userId": "stiannorwayliveshow"
+  },
+  {
+    "platform": "tiktok",
+    "userId": "stiannorwaytiktok"
   }
 ]
