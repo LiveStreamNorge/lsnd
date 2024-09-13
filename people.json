@@ -1235,5 +1235,9 @@
   {
     "platform": "tiktok",
     "userId": "stiannorwaytiktok"
+  },
+  {
+    "platform": "twitch",
+    "userId": "norwayirl"
   }
 ]
