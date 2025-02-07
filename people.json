@@ -1251,5 +1251,9 @@
   {
     "platform": "twitch",
     "userId": "0ter"
+  },
+  {
+    "platform": "kick",
+    "userId": "detoo"
   }
 ]
