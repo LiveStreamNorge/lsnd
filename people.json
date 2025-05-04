@@ -1255,5 +1255,29 @@
   {
     "platform": "kick",
     "userId": "detoo"
+  },
+  {
+    "platform": "twitch",
+    "userId": "maajte"
+  },
+  {
+    "platform": "twitch",
+    "userId": "melkepakken"
+  },
+  {
+    "platform": "twitch",
+    "userId": "simmlings"
+  },
+  {
+    "platform": "twitch",
+    "userId": "anehte"
+  },
+  {
+    "platform": "twitch",
+    "userId": "10nita"
+  },
+  {
+    "platform": "twitch",
+    "userId": "maajte"
   }
 ]
