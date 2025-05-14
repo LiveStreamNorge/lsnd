@@ -1275,5 +1275,8 @@
   {
     "platform": "twitch",
     "userId": "10nita"
-  }
+  },  {
+    "platform": "twitch",
+    "userId": "byrbotten"
+  },
 ]
