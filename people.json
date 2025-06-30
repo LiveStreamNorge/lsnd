@@ -1278,5 +1278,8 @@
   },  {
     "platform": "twitch",
     "userId": "byrbotten"
+  }, {
+    "platform": "twitch",
+    "userId": "dinusen"
   }
 ]
