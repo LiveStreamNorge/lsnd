@@ -721,7 +721,8 @@
   },
   {
     "platform": "twitch",
-    "userId": "detoo"
+    "userId": "detoo",
+    "team": "Goon House"
   },
   {
     "platform": "twitch",
@@ -1290,5 +1291,13 @@
   }, {
     "platform": "twitch",
     "userId": "maja"
+  },{
+    "platform": "twitch",
+    "userId": "oreokjek1x",
+    "team": "Goon House"
+  }{
+    "platform": "twitch",
+    "userId": "rodneeeyyy",
+    "team": "Goon House"
   }
 ]
