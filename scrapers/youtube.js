@@ -4,7 +4,7 @@ module.exports = ["youtube", async function (id) {
     const {data} = await axios.get(`https://youtube.com/channel/${id}`);
 
     const avatar = data.match(/channelMetadataRenderer.*?avatar.*?thumbnails.*?url".*?"(.*?)"/s)[1];
-    const name = data.match(/channelMetadataRenderer.*?title".*?"(.*?)"/s)[1];
+    const name = data.match(/metadata.*?channelMetadataRenderer.*?title".*?"(.*?)"/s)[1];
 
     const {data: livedata} = await axios.get(`https://youtube.com/channel/${id}/live`);
     let live, title;
